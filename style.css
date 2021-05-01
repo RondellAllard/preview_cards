@@ -2,11 +2,104 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 15px;
+}
+
+body {
+  background-color: #0b0c1a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 320px;
+  height: 80%;
+  background-color: #1c1839;
+  border-radius: 5px;
+  margin: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  height: 40vh;
+}
+.hero-image {
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/image-header-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.overlay {
+  height: 40vh;
+  width: 100%;
+  background: #a46ad2;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px 3px 0 0;
+}
+.overlay2 {
+  height: 40vh;
+  width: 100%;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+h1 span {
+  color: #a46ad2;
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  color: #fff;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #aba7c1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+h1 + p {
+  margin-bottom: 1.5rem;
+}
+
+h2 + p {
+  margin: 0.2rem auto 1rem;
+  font-size: 0.8rem;
+}
+
+.cap {
+  text-transform: uppercase;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #fff;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
